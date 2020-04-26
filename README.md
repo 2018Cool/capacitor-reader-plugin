@@ -5,7 +5,8 @@
 `iOS&Android`
 #### 支持的文档格式与技术说明
 ```
-Android实现使用腾讯x5内核tbs，iOS借助于系统webview实现，支持预览pdf，excel，ppt，doc，docx，txt等常见文档格式。
+Android实现使用腾讯x5内核tbs，iOS借助于系统webview实现，
+支持预览pdf，excel，ppt，doc，docx，txt等常见文档格式。
 ```
 #### 如何使用
 
@@ -92,5 +93,7 @@ function openFile(doc) {
 
 #### 注意事项
 ```
-Android是借助于腾讯tbs来实现的，由于Google Play对于动态下发⼆进制代码的限制，⽆法针对Google Play版本的app动态投放内核，所以需要上架Google Play的APP暂时⽆法使⽤X5内核,如果您的Android应用是要在Google Play发布上架，请勿使用此插件。
+Android是借助于腾讯tbs来实现的，由于Google Play对于动态下发⼆进制代码的限制，
+⽆法针对Google Play版本的app动态投放内核，所以需要上架Google Play的APP暂时⽆法使⽤X5内核，
+如果您的Android应用是要在Google Play发布上架，请勿使用此插件。
 ```
