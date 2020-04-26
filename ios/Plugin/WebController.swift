@@ -225,7 +225,6 @@ open class WebController: UIViewController {
         return button
     }()
     
-    
     // MARK: Life Cycle
     
     open override func viewDidLoad() {
@@ -325,9 +324,23 @@ open class WebController: UIViewController {
         
     }
     
+    
     func setStatusBarBackgroundColor(color: UIColor) {
-        guard let statusBar = UIApplication.shared.value(forKeyPath: "statusBarWindow.statusBar") as? UIView else { return }
-        statusBar.backgroundColor = color
+          if #available(iOS 13.0, *) {
+            let statusBarSize = UIApplication.shared.statusBarFrame.size
+            let statusBar : UIView = UIView.init(frame: UIApplication.shared.keyWindow?.windowScene?.statusBarManager?.statusBarFrame ?? CGRect.init(x: 0, y: 0, width: statusBarSize.width, height: statusBarSize.height))
+              statusBar.backgroundColor = color
+              statusBar.tintColor = UIColor.white
+              UIApplication.shared.keyWindow?.addSubview(statusBar)
+          
+          } else {
+              // Fallback on earlier versions
+              let statusBarWindow : UIView = UIApplication.shared.value(forKey: "statusBarWindow") as! UIView
+              let statusBar : UIView = statusBarWindow.value(forKey: "statusBar") as! UIView
+              if statusBar.responds(to:#selector(setter: UIView.backgroundColor)) {
+                          statusBar.backgroundColor = color
+              }
+          }
     }
     
     func statusBarHeight() -> CGFloat {

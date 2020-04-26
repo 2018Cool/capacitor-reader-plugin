@@ -21,7 +21,9 @@ public class ReaderPlugin: CAPPlugin {
             webController.toolView.isHiddenToolBar=true
             webController.title=title
             webController.navbarColor = navbarColor
+            webController.titleTintColor = UIColor.white
             webController.load(url)
+            webController.modalPresentationStyle = .fullScreen
             self.bridge.viewController.present(webController, animated: true, completion: nil)
         }
 
