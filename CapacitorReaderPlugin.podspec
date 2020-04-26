@@ -1,7 +1,7 @@
 
   Pod::Spec.new do |s|
     s.name = 'CapacitorReaderPlugin'
-    s.version = '1.0.1'
+    s.version = '1.0.2'
     s.summary = 'document file reader'
     s.license = 'MIT'
     s.homepage = '_'
