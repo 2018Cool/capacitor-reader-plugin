@@ -1,6 +1,6 @@
 {
   "name": "capacitor-reader-plugin",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "document file reader",
   "main": "dist/esm/index.js",
   "types": "dist/esm/index.d.ts",

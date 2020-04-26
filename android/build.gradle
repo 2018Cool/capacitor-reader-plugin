@@ -41,7 +41,7 @@ repositories {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation 'androidx.appcompat:appcompat:1.0.0'
+    implementation 'androidx.appcompat:appcompat:1.0.1'
     implementation "com.squareup.okhttp3:okhttp-urlconnection:3.10.0"
     implementation project(':capacitor-android')
     testImplementation 'junit:junit:4.12'
