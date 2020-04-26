@@ -1,4 +1,4 @@
-package com.hanlyjiang.library.utils;
+package com.library.utils;
 
 import android.content.Context;
 import android.content.Intent;
@@ -9,10 +9,6 @@ import com.reader.plugin.capacitorreaderplugin.R;
 
 import java.io.File;
 
-/**
- * @author hanlyjiang on 2018/5/16-16:53.
- * @version 1.0
- */
 
 class IntentUtils {
 

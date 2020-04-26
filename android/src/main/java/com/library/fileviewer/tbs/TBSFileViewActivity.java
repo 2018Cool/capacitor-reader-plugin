@@ -1,4 +1,4 @@
-package com.hanlyjiang.library.fileviewer.tbs;
+package com.library.fileviewer.tbs;
 
 import android.annotation.TargetApi;
 import android.app.DownloadManager;
@@ -29,9 +29,8 @@ import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.hanlyjiang.library.utils.FileViewerUtils;
+import com.library.utils.FileViewerUtils;
 import com.reader.plugin.capacitorreaderplugin.R;
-import com.tencent.smtt.sdk.QbSdk;
 import com.tencent.smtt.sdk.TbsReaderView;
 
 import java.io.File;
@@ -51,8 +50,6 @@ import java.io.File;
  * <li>epub</li>
  * <br/>
  * intent参数: filePath - 文件路径
- *
- * @author hanlyjiang
  */
 public class TBSFileViewActivity extends AppCompatActivity implements TbsReaderView.ReaderCallback {
     public static final String FILE_PATH = "filePath";

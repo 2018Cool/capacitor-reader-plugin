@@ -1,4 +1,4 @@
-package com.hanlyjiang.library.fileviewer.wps;
+package com.library.fileviewer.wps;
 
 import android.content.ActivityNotFoundException;
 import android.content.Context;
@@ -11,19 +11,12 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import android.util.Log;
 
-import com.hanlyjiang.library.utils.AndroidUtils;
-import com.hanlyjiang.library.utils.FileViewerUtils;
+import com.library.utils.AndroidUtils;
+import com.library.utils.FileViewerUtils;
 
 import java.io.File;
 import java.util.List;
 
-
-/**
- * WPS打开文件工具
- *
- * @author hanlyjiang on 2018/3/22-13:49.
- * @version 1.0
- */
 
 public class WPSOpenUtils {
 

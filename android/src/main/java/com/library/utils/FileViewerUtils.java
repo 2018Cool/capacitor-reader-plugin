@@ -1,4 +1,4 @@
-package com.hanlyjiang.library.utils;
+package com.library.utils;
 
 import android.content.Context;
 import android.content.Intent;
@@ -11,12 +11,6 @@ import com.reader.plugin.capacitorreaderplugin.R;
 
 import java.io.File;
 
-/**
- * 文件查看相关工具类
- *
- * @author hanlyjiang 2017/3/13
- * @version 1.0
- */
 public class FileViewerUtils {
 
     public static final int FILE_EDIT = 0;

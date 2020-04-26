@@ -4,19 +4,13 @@ import android.Manifest;
 import android.content.Context;
 import android.content.pm.PackageManager;
 
-import com.getcapacitor.JSObject;
 import com.getcapacitor.NativePlugin;
 import com.getcapacitor.Plugin;
 import com.getcapacitor.PluginCall;
 import com.getcapacitor.PluginMethod;
-import com.hanlyjiang.library.fileviewer.FileViewer;
+import com.library.fileviewer.FileViewer;
 import com.tencent.smtt.sdk.QbSdk;
 
-import org.json.JSONException;
-import org.json.JSONObject;
-
-import java.io.File;
-import java.util.HashMap;
 
 @NativePlugin(
         permissionRequestCode = 8002
@@ -51,11 +45,13 @@ public class ReaderPlugin extends Plugin {
             @Override
             public void onViewInitFinished(boolean arg0) {
                 // TODO Auto-generated method stub
+                System.out.print("x5 init successed");
                 //x5內核初始化完成的回调，为true表示x5内核加载成功，否则表示x5内核加载失败，会自动切换到系统内核。
             }
 
             @Override
             public void onCoreInitFinished() {
+                System.out.print("x5 init failed");
                 // TODO Auto-generated method stub
             }
         };

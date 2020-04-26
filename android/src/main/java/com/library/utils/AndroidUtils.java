@@ -1,4 +1,4 @@
-package com.hanlyjiang.library.utils;
+package com.library.utils;
 
 import android.content.Context;
 import android.widget.Toast;

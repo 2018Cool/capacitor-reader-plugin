@@ -1,9 +1,6 @@
-package com.hanlyjiang.library.fileviewer.wps;
+package com.library.fileviewer.wps;
 
-/**
- * @author hanlyjiang on 2018/3/22-12:04.
- * @version 1.0
- */
+
 
 class WPSModel {
     public static final String OPEN_MODE = "OpenMode";// 打开文件的模式。

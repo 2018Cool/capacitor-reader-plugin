@@ -1,4 +1,4 @@
-package com.hanlyjiang.library.fileviewer.wps;
+package com.library.fileviewer.wps;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
@@ -6,10 +6,6 @@ import android.content.Intent;
 import android.util.Log;
 
 
-/**
- * @author hanlyjiang on 2018/3/22-12:09.
- * @version 1.0
- */
 
 public abstract class WPSOpRecv extends BroadcastReceiver {
 

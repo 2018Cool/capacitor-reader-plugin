@@ -1,23 +1,12 @@
-package com.hanlyjiang.library.fileviewer;
+package com.library.fileviewer;
 
 import android.content.Context;
-import android.content.Intent;
-import android.net.Uri;
 import android.text.TextUtils;
 import android.util.Log;
 
-import com.hanlyjiang.library.fileviewer.tbs.TBSFileViewActivity;
-import com.hanlyjiang.library.utils.FileViewerUtils;
+import com.library.fileviewer.tbs.TBSFileViewActivity;
+import com.library.utils.FileViewerUtils;
 
-import java.io.File;
-
-
-/**
- * 文件查看入口
- *
- * @author hanlyjiang on 2017/12/13-16:59.
- * @version 1.0
- */
 
 public class FileViewer {
 
